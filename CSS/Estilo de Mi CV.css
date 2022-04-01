@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Lato, Times, serif;
+    text-align: left;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-weight: 300;
+    margin: 4rem;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(72, 182, 58);
+}
+
+h2 {
+    text-decoration: underline solid 0.2rem;
+    text-transform: uppercase;
+    color: rgb(114, 216, 182);
+}
+
+ul {
+    list-style-type: square;
+}
+
+p,
+li {
+    font-size: 1.1rem;
+}
+
+a {
+    color: rgb(106, 106, 255);
+}
+
+h1~div {
+    background: rgb(15, 15, 15);
+    border: double rgb(3, 122, 73) 5px;
+    margin: 20px 40px;
+    padding: 20px 30px;
+    max-width: 1190px;
+}
+
+.item-indice {
+    font-size: 1.12em;
+    text-transform: uppercase;
+    text-decoration: underline solid 0.06rem;
+}
+
+#foto {
+    width: 225px;
+}
+
+#formulario {
+    font-size: 1.75rem;
+}
+
+#div1{
+    max-width: max-content;
+}
+
+#div2{
+    padding: 20px;
+    max-width: fit-content;
+}

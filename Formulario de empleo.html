@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="CSS\Estilo de formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1>Contacto</h1>
+    <p>Si está interesado en contratarme complete el siguiente formulario:</p>
+    <form action="mailto:amadorfabrizio@gmail.com">
+        <h2>Sobre el Empleador</h2>
+        <p><label for="empleador">Empleador (Institución, Empresa, Persona): </label><input type="text" id="empleador"></p>
+        <p>
+            <label for="tipo">¿A que se dedica la empresa?</label><br>
+                <textarea name="tipo" id="tipo" cols="30" rows="10" placeholder="Describa brevemente a que área se dedica la empresa..."></textarea></p>
+        <p><label for="edad-numero meses años">¿Cuanta edad tiene la empresa?</label> <input type="number" name="edad" id="edad-numero"><input type="radio" name="edad" id="meses"><label for="meses">meses</label><input type="radio" name="edad" id="años"><label for="años">años</label></p>
+        <h2>Sobre el trabajo</h2>
+        <p><label for="descripcion">Describa funciones del trabajo</label><br>
+            <textarea name="descripcion" id="funciones" cols="30" rows="10" placeholder="Describa brevemente funciones del trabajo"></textarea></p>
+        <p><label for="horas">Horas de trabajo pretendidas:</label>
+            <input type="number" id="horas" min="1" max="9"><label for="horas">horas.</label></p>
+        <p><label for="fijo movil">¿El horario turno será fijo o móvil?</label><br>
+            <input type="radio" name="horario" id="fijo"><label for="fijo">Será fijo de </label><input type="time" name="horario" id="hora-inicio"> a <input type="time" name="horario" id="hora-final"><br>
+            <input type="radio" name="horario" id="movil"><label for="movil">Será móvil.</label></p>
+        <p><label for="si no no-necesario">¿De ser necesario entregarán uniforme?</label><br>
+            <input type="radio" name="uniforme" id="si" value="Si"><label for="si">Si</label><br>
+            <input type="radio" name="uniforme" id="no" value="No"><label for="no">No</label><br>
+            <input type="radio" name="uniforme" id="no-necesario" value="no-necesario"><label for="no-necesario">No es necesario uniforme</label></p>
+        <p><label for="blanco negro">¿Será trabajo en blanco o en negro?</label><br>
+            <input type="radio" name="color" id="blanco"><label for="blanco">Blanco</label><br>
+            <input type="radio" name="color" id="negro"><label for="negro">Negro</label></p>
+        <p><label for="remuneracion">¿Cuanto es la remuneración mensual neta?</label> <input type="number" name="remuneracion" id="remuneracion"></p>
+        <h2>Contacto</h2>
+        <p><label for="telefono">Número de contacto:</label><input type="tel" name="telefono" id="telefono"></p>
+        <p><label for="maildecontacto">Correo electrónico:</label><input type="email" name="maildecontacto" id="maildecontacto"></p>
+        <p><label for="wwp mensaje llamada email">¿Que forma de contacto por número prefiere?</label><br>
+            <input type="checkbox" name="contacto" id="wwp">Whatsapp<br>
+            <input type="checkbox" name="contacto" id="mensaje">Mensaje de texto<br>
+            <input type="checkbox" name="contacto" id="llamada">Llamada telefónica<br>
+            <input type="checkbox" name="contacto" id="email">Correo electrónico</p>
+        <input type="submit" value="Enviar formulario"><input type="reset" value="Resetear">
+    </form>
+</body>
+
+</html>
