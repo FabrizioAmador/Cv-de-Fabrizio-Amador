@@ -44,6 +44,15 @@ h1~div {
     max-width: 1190px;
 }
 
+footer {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+em {
+    font-style: italic;
+}
+
 .item-indice {
     font-size: 1.12em;
     text-transform: uppercase;
